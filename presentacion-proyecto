@@ -1,0 +1,16 @@
+
+Se solicita una plataforma estudiantil con facil acceso a informacion general tantos de profes como de alumnos.
+Con esto se buscara un mejor acceso general de todas las partes del colegio, tener una mejor eficiencia en el manejo de datos
+y mejoral la administracion del instituto en general.
+
+Se hara un proyecto sobre una plataforma de un colegio donde se alamacenaran datos de profes, estudiantes y las materias
+tambien tendra un apartado donde los profes puedan subir las notas, y los estudiantes puedan verlas de facil manera.
+Tambien se podran hacer matriculas en la misma pagina.
+
+*Puntos importates:
+
+-Realizar un login para estudiantes y profesores.
+-Hacer el menu de notas vista profe y vista alumno.
+-Hacer el menu de matriculas.
+-Hacer menu para ver tus asignaturas.
+-Hacer un control de asistencia.
