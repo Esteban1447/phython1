@@ -1,16 +1,33 @@
+Se solicita una plataforma estudiantil con fácil acceso a información general tanto de profesores como de alumnos. Con esto se buscará un mejor acceso general de todas las partes del colegio, tener una mejor eficiencia en el manejo de datos y mejorar la administración del instituto en general.
 
-Se solicita una plataforma estudiantil con facil acceso a informacion general tantos de profes como de alumnos.
-Con esto se buscara un mejor acceso general de todas las partes del colegio, tener una mejor eficiencia en el manejo de datos
-y mejoral la administracion del instituto en general.
+Se hará un proyecto sobre una plataforma de un colegio donde se almacenarán datos de profesores, estudiantes y las materias. También tendrá un apartado donde los profesores puedan subir las notas, y los estudiantes puedan verlas de manera fácil. Además, se podrán hacer matrículas en la misma página.
 
-Se hara un proyecto sobre una plataforma de un colegio donde se alamacenaran datos de profes, estudiantes y las materias
-tambien tendra un apartado donde los profes puedan subir las notas, y los estudiantes puedan verlas de facil manera.
-Tambien se podran hacer matriculas en la misma pagina.
+**Puntos importantes:**
 
-*Puntos importates:
+- Realizar un login para estudiantes y profesores.
+- Hacer el menú de notas (vista profesor y vista alumno).
+- Hacer el menú de matrículas.
+- Hacer un menú para ver tus asignaturas.
+- Hacer un control de asistencia.
+- Implementar un sistema de notificaciones para avisos importantes.
+- Asegurar la protección de datos personales mediante cifrado.
+- Crear un sistema de recuperación de contraseñas.
+- Incluir un foro de discusión para estudiantes y profesores.
+- Desarrollar una interfaz amigable y responsiva para dispositivos móviles.
 
--Realizar un login para estudiantes y profesores.
--Hacer el menu de notas vista profe y vista alumno.
--Hacer el menu de matriculas.
--Hacer menu para ver tus asignaturas.
--Hacer un control de asistencia.
+**Tecnologías sugeridas:**
+
+- Frontend: React, Angular o Vue.js
+- Backend: Node.js, Django o Flask
+- Base de datos: MySQL, PostgreSQL o MongoDB
+- Autenticación: JWT (JSON Web Tokens) o OAuth
+- Hosting: AWS, Heroku o Azure
+
+**Consideraciones adicionales:**
+
+- Realizar pruebas de usabilidad con usuarios reales.
+- Documentar el código y crear una guía de usuario.
+- Planificar un mantenimiento regular de la plataforma.
+- Asegurar la escalabilidad para futuros incrementos de usuarios.
+- Implementar un sistema de respaldo de datos.
+
