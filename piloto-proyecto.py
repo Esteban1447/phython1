@@ -1,25 +1,45 @@
+import random
+
+# Asignar de forma aleatoria el valor de tipoestudiante (True o False)
+# Esto para que no siempre le salga todas las notas negativaas a algunos estudiantes
+tipoestudiante = random.choice([True, False])
+
+
 # Lista de materias
 materias = ['Matemáticas', 'Historia', 'Ciencias']
-
 
 # Lista de estudiantes disponibles para elegir
 estudiantes_disponibles = ['Estudiante 1', 'Estudiante 2', 'Estudiante 3']
 
 # Diccionario para almacenar las notas de cada estudiante (inicialmente en 0)
-notas_estudiantes = {estudiante: {materia: 0 for materia in materias} for estudiante in estudiantes_disponibles}
+notas_estudiantes = {
+    estudiante: {materia: 0 for materia in materias} 
+    for estudiante in estudiantes_disponibles
+}
 
 # Validación para saber si es estudiante o profesor
 validacion = input("¿Eres estudiante o profesor?: ").lower()
 
 if validacion == "estudiante":
-    estudiante = input("Digite su nombre: ")
+    # Mostrar menú con los estudiantes disponibles
+    print("\nEstudiantes disponibles:")
+    for i, est in enumerate(estudiantes_disponibles, 1):
+        print(f"{i}. {est}")
+        
+    # Solicitar al usuario que seleccione un estudiante por su número
+    eleccion = int(input("\nSeleccione el número del estudiante: "))
+    estudiante = estudiantes_disponibles[eleccion - 1]
 
-    # Si el estudiante no ingresa un nombre, asignamos uno por defecto
-    if estudiante == "":
-        estudiante = "Estudiante 1"
+    # Asignar notas aleatorias según el valor aleatorio de tipoestudiante
+    for materia in materias:
+        if tipoestudiante:
+            # Si tipoestudiante es True: notas aleatorias de 3 a 5
+            notas_estudiantes[estudiante][materia] = random.uniform(3, 5)
+        else:
+            # Si es False: notas aleatorias de 1 a 5
+            notas_estudiantes[estudiante][materia] = random.uniform(1, 5)
 
-    
-    # Mostrar las notas del estudiante
+    # Mostrar las notas del estudiante elegido
     print(f"\nNotas de {estudiante}:")
     for materia, nota in notas_estudiantes[estudiante].items():
         print(f'{materia}: {nota:.2f}')
@@ -56,11 +76,11 @@ elif validacion == "profesor":
             while True:
                 try:
                     nueva_nota = float(input(f"Nota para {materia}: "))
-                    if 0 <= nueva_nota <= 10:  # Validamos que la nota esté entre 0 y 10
+                    if 1 <= nueva_nota <= 5:  # Validamos que la nota esté entre 1 y 5
                         notas_estudiantes[estudiante_elegido][materia] = nueva_nota
                         break
                     else:
-                        print("Por favor, ingrese una nota válida entre 0 y 10.")
+                        print("Por favor, ingrese una nota válida entre 1 y 5.")
                 except ValueError:
                     print("Por favor, ingrese un número válido.")
 
